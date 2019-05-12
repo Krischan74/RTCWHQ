@@ -133,11 +133,15 @@ This is a long description of the single steps the batch command calls and execu
    
 2. **Execute rtcwhq.py**
 	- loads the ESRGAN model "cartoonpainted_400000.pth" taken from here: [https://esrgan.blogspot.com/2019/01/blog-post.html](https://esrgan.blogspot.com/2019/01/blog-post.html)
+	- loads the ESRGAN model "ReducedColorsAttempt.pth" tkane from here: [https://kingdomakrillic.tumblr.com/post/181294654011/a-collection-of-great-art-oriented-models-not](https://kingdomakrillic.tumblr.com/post/181294654011/a-collection-of-great-art-oriented-models-not)
 	- parses the input folder for PNG, JPG or TGA files
-	- counts their numbers
+	- counts the numbers of images there
 	- removes readonly attributes from these files
-	- too large images are resized to their half resolution before upscaling
-	- the scaling runs in a loop until the maximum resolution has been reached (approx. 2048x2048)
+	- too large images are resized to their half resolution before upscaling (if flag is set)
+	- images not following power of two resolution are size-corrected, if flag is set
+	- trying to convert images with different color depth (not RGB/RGBA) to RGB
+	- special RTCW/ET folders not worth to rescale are ignored if a flag is set
+	- the scaling runs in a loop until the maximum resolution or the target resolution has been reached
 	- the Alpha channel is scaled, too!
 	- after scaling, a slight Gaussian Blur is applied to the Alpha channel to sharpen the edges
 	- additional, Contrast and Brightness changes are applied to the Alpha channel to have more control over the edge contrast
@@ -163,13 +167,17 @@ You can then take these PK3 files and copy them at the folder where the original
 <a name="generalissues"></a>
 ### General Issues
 - the "cartoonpainted_400000.pth" model is a factor 4x only upscaling model, consider this!
-- you're an ATI rebel and don't like nVidia? Bad luck - ESRGAN is based on CUDA, though it can run very slow on a CPU
+- the "ReducedColorsAttempt.pth" model is a factor 4x only upscaling model, consider this!
+- you're an ATI rebel and don't like nVidia? Bad luck - ESRGAN is based on CUDA, though it can run very slow on a CPU - set the variable **target** from **cuda** to **cpu** to switch
 - ESRGAN uses a lot of GPU VRAM so there is a limitation for input scale, an estimated maximum value for 8GB VRAM is 1024x512 = 524288 Pixels
-- input images above this size are resized by factor 2 until they are below this limit!
+- input images above this size are resized by factor 2 until they are below this limit, if the flag is set!
 - this is because it will result in errors if you try to enlarge a large texture, it must stay below this limit unless you have dozens of GB of VRAM
-- Alpha textures can sometimes make trouble - most of them are scaled properly with the default settings but sometimes you must tweak them later, see Tweaking for more details
+- Alpha textures can sometimes make trouble - most of them are scaled properly with the default settings but sometimes you must tweak them later or delete from from the source PK3s, see Tweaking for more details
 - Loading times. Even with ETlegacy the loading times increase a lot with huge textures. You should really run ET from a M.2 SSD with four PCIe lanes :-)
-- you'll need a lot of VRAM to play RTCW/ET with HQ textures, scaling to 2048 Pixels consume approximately 2-3GB of VRAM on a single map
+- you'll need a lot of VRAM to play RTCW/ET with HQ textures, scaling to 2048 Pixels consume approximately 2-3GB of VRAM on a single map, RTCW/ET may even crash
+- sometimes I've experienced an endless loop with the ESRGAN resize/scale loop but I couldn't find the problem, to avoid this make sure you're converting ONLY textures with a power of two resolution (2^x = 128x128, 128x256, 512x512, 1024x512 and so on)
+- some custom maps MAY contain invalid images, I've found textures with very unusual resolutions or even PCX images named as TGA
+- rtcwhq tries to convert them but I haven't test all maps available out there so expect the unexpected (though the standard PK3s should convert without any issues)
 
 <a name="rtcwissues"></a>
 ### RTCW won't start with HQ textures
@@ -207,6 +215,12 @@ In the **rtcwhq.py** there are some flags you can set to **True** (enabled) or *
 |rtcwexcludes|True|exclude defined RTCW/ET folders and use standard settings there (see below)|
 |alphaoptimize|True|use gaussian blur, contrast and brightness (or not, if not needed)|
 |usesharpen|True|sharpen the high resolution texture before resize to increase quality|
+|autoconvert|True|convert the image to RGB if it is NOT RBG/RGBA!|
+|skiptracemap|True|don't resize / include the tracemap|
+|scalelightmaps|True|resize Lightmaps (could look better, could look strange)|
+|scalelarge|False|scale large images too (True = they are initially resized to a lower res)|
+|testmode|False|in Testmode, a Lancosz method is used instead of the ESRGAN method|
+|warnings|False|ignore (False) or show (True) warnings|
 
 <a name="variables"></a>
 ### Variables
@@ -221,7 +235,8 @@ In the **rtcwhq.py** there are some default variables you can change if needed b
 |scaling|Image.LANCZOS|scaling method reducing too large images for next scale pass|
 |finishing|Image.LANCZOS|scaling method reducing the highres image to the desired resolution|
 |target|'cuda'|ESRGAN target device: 'cuda' for nVidia card (fast) or 'cpu' for ATI/CPU|
-|model_path|'models/cartoonpainted_400000.pth'|the path to the model you want to use|
+|model_path|'models/cartoonpainted_400000.pth'|the path to the model you want to use for textures|
+|font_model_path|'models/ReducedColorsAttempt.pth'|the path to the model you want to use for font texture scaling|
 
 Valid scaling methods (PIL) are: **Image.NEAREST**, **Image.BILINEAR**, **Image.BICUBIC** or **Image.LANCZOS** only
 
@@ -245,6 +260,7 @@ The input image gets resized to a higher resolution until the set maximum limit 
 ### Autoexcludes (RTCW/ET specific)
 This tool is written for RTCW/ET but can be used for other purposes, too. I've added some RTCW/ET specific checks, please consider this and switch the Flag **rtcwexcludes** in **rtcwhq.py** to **False** if it causes trouble:
 - files inside folders containing "fonts" in the folder name get a maximum texture size of 1024 (fonts)
+- the hudchars.tga file gets an extra setting to create clean edges
 - files inside folders containing "levelshots" in the folder name get a maximum texture size of 512 (except the _cc map)
 - files inside folders containing "maps" in the folder name get a maximum texture size of 1024 (lightmaps)
 - files inside folders containing "skies", "sfx" or "liquids" in the folder name get NO contrast or brightness change (blurry alphas)
@@ -252,11 +268,23 @@ This tool is written for RTCW/ET but can be used for other purposes, too. I've a
 <a name="changelog"></a>
 # Changelog
 
-- 05/06/2019 updated Readme
-added some information how to bypass problems in RTCW with HQ textures, added animated comparison GIFs, Readme updated
+- 05/12/2019 Major update: many extensions to rtcwhq.py
+  - added flags: autoconvert, skiptracemap, scalelightmaps, scalelarge, testmode, warnings
+  - added texture size fix "poweroftwo" and conversion of non RGB(A) files to RGB (there were some problems with flughafen.pk3 and PCX files named as TGA which resulted in fatal errors, now the script converts or skips them
+  - added a testmode to save time (it only scales with Lanczos instead of ESRGAN, to test settings and for debugging)
+  - did a complete test run with RTCW/ET, some RTCW MP/SP custom maps and about 60 ET custom maps:
+  - Benchmark: ET pak0.pk3 with 1449 images, converted to 4x or max. 2048 Pixels in ~ 13 Minutes (1.4GB final PK3 size)
+  - Benchmark: RTCW pak0.pk3 with 2164 images, converted to 4x or max. 2048 Pixels in ~ 27 Minutes (0.7GB final PK3 size)
+  - Benchmark performed on a i7-9700K@3.6GHz (8 real cores) / nVidia RTX2080 8GB (Inno3D)
 
-- 05/05/2019 switched over to Python
-the new python script includes all features and gives better results, got rid of the Blitzmax tool
+- 05/06/2019 Updated Readme
+  - added some information how to bypass problems in RTCW with HQ textures
+  - added animated comparison GIFs
+  - Readme updated
+
+- 05/05/2019 Switched over to Python
+  - the new python script includes all features and gives better results
+  - got rid of the Blitzmax tool
 
 - 05/04/2019 Initial commit
-  the first version relies on a additional tool written in Blitzmax
+  - the first version relies on a additional tool written in Blitzmax
