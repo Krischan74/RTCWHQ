@@ -190,7 +190,9 @@ You can then take these PK3 files and copy them at the folder where the original
 You can adjust the Alpha channels that they get more sharp edges. While most of the Alpha textures are scaled properly some need extra treatment. For example, a diffuse puddle texture looks better with more blurry edges while a fence needs a hard edge. So how do we get good scaled Alpha channels? Blur them!
 
 You can set the blur, contrast and brightness values in my batch file. Take a look at this line with the default settings:
-> python.exe rtcwhq.py [path] [scale] [size] [blur] [contrast] [brightness] [sharpen] [quality]
+
+> Syntax: python.exe rtcwhq.py [path] [scale] [size] [blur] [contrast] [brightness] [sharpen] [quality]
+
 > Default: python.exe rtcwhq.py input 8 2048 2 2.0 0.0 4 90
 
 **Argument details:**
@@ -209,6 +211,7 @@ You can set the blur, contrast and brightness values in my batch file. Take a lo
 <a name="flags"></a>
 ### Flags
 In the **rtcwhq.py** there are some flags you can set to **True** (enabled) or **False** (disabled):
+
 |flag|default|description|
 |:-|:-:|:-|
 |powertwo|True|check for and correct textures which are not power of two size|
