@@ -101,7 +101,7 @@ def poweroftwo(val):
 			# get delta between previous and next power (middle)
 			delta=(mx-mn)/2
 			# value above the middle: use higher power of two else use lower power of two
-			if val>(mn+delta):
+			if val>=(mn+delta):
 				return mx
 			else:
 				return mn

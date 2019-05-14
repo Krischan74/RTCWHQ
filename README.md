@@ -14,8 +14,7 @@ But you can use RTCWHQ to **upscale any kind of Images, Icons, Textures, Pixelar
 	- [Wolfenstein: Enemy Territory comparison](#et)
 	- [Return to Castle Wolfenstein comparison](#rtcw)
 	- [Texture comparison](#textures)
-	- [Examples RTCW](#examplesrtcw)
-	- [Examples ET](#exampleset)
+	- [Examples RTCW](#examples)
 - [Python Setup](#python)
 - [Batch Workflow](#workflow)
 
@@ -34,7 +33,9 @@ But you can use RTCWHQ to **upscale any kind of Images, Icons, Textures, Pixelar
 
 - [Changelog](#changelog)  
 
+
 <a name="features"></a>
+
 # Features
 - **Python-only** solution
 - **converts** your RTCW/ET/Q3 whatever textures from Lores to Hires using ESRGAN
@@ -46,6 +47,7 @@ But you can use RTCWHQ to **upscale any kind of Images, Icons, Textures, Pixelar
 
 
 <a name="quickusage"></a>
+
 # Quick Usage Instructions
 - install Python like [described here](#python)
 - get [ETlegacy](https://www.etlegacy.com) and install ET - it's free (and [RTCW](https://store.steampowered.com/) is still available on Steam)
@@ -57,47 +59,94 @@ But you can use RTCWHQ to **upscale any kind of Images, Icons, Textures, Pixelar
 - take a look at the [Known Issues](#issues) to fix problems
 - have fun!
 
+
 <a name="screenshots"></a>
+
 # Screenshots
 Some Screenshots and Textures from both games for direct comparison. See the difference with the Alpha layers. All original textures are Copyright (C) 1999-2010 id Software LLC, a ZeniMax Media company and only used/altered here to show the difference. RTCW and ET are still two of my most favourite games and the creators did a very good job, thanks!
 
 <a name="et"></a>
+
 ### Wolfenstein: Enemy Territory Comparison
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/ET_Fueldump_HQ.jpg" width="384" height="160" title="ET Fueldump HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/ET_Fueldump_LQ.jpg" width="384" height="160" title="ET Fueldump LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/ET_Radar1_HQ.jpg" width="384" height="160" title="ET_Radar1_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/ET_Radar1_LQ.jpg" width="384" height="160" title="ET_Radar1_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/ET_Radar2_HQ.jpg" width="384" height="160" title="ET_Radar2_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/ET_Radar2_LQ.jpg" width="384" height="160" title="ET_Radar2_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/ET_Radar3_HQ.jpg" width="384" height="160" title="ET_Radar2_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/ET_Radar3_LQ.jpg" width="384" height="160" title="ET_Radar3_LQ">
+Screenshots from the Battery Map. Left: original (LQ) and Right: 4x scaled (HQ). The difference may be small but sometimes it really looks stunning, not so blurry and more sharpened. Try it yourself, it is hard to see the effect in a single Screenshot.
+
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Alpha_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Alpha_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Bunker_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Bunker_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Commandpost_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Commandpost_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Corridor_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Corridor_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Electronics_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Electronics_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Gun_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Gun_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Gunroom_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Gunroom_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Machine_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Machine_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Radar_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Radar_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Restroom_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Restroom_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Sea_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Sea_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Sign_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Sign_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Wires_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Wires_HQ.jpg" width="384">
+
 
 <a name="rtcw"></a>
+
 ### Return to Castle Wolfenstein Comparison
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/RTCW_Adlernest_HQ.jpg" width="384" height="160" title="RTCW_Adlernest_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/RTCW_Adlernest_LQ.jpg" width="384" height="160" title="RTCW_Adlernest_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/RTCW_Marketgarden_HQ.jpg" width="384" height="160" title="RTCW_Marketgarden_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/RTCW_Marketgarden_LQ.jpg" width="384" height="160" title="RTCW_Marketgarden_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/RTCW_Schwalbe_HQ.jpg" width="384" height="160" title="RTCW_Schwalbe_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/RTCW_Schwalbe_LQ.jpg" width="384" height="160" title="RTCW_Schwalbe_LQ">
+Screenshots from the Chateau SP Map. Left: original (LQ) and Right: 4x scaled (HQ). The difference may be small but sometimes it really looks stunning, not so blurry and more sharpened. Try it yourself, it is hard to see the effect in a single Screenshot.
+
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Alpha_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Alpha_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Briefing1_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Briefing1_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Briefing2_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Briefing2_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Cellar_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Cellar_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Corridor_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Corridor_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Hall_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Hall_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Library_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Library_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Marble_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Marble_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Menu_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Menu_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Mess1_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Mess1_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Mess2_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Mess2_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Office_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Office_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Ornament1_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Ornament1_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Ornament1_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Ornament2_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Stair_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Stair_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Wallpaper_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Wallpaper_HQ.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Woman_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Woman_HQ.jpg" width="384">
+
 
 <a name="textures"></a>
+
 ### Texture Comparison
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_atruss_m06a_HQ.png" width="384" height="384" title="Texture_atruss_m06a_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_atruss_m06a_LQ.gif" width="384" height="384" title="Texture_atruss_m06a_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_chandlier4_HQ.png" width="384" height="768" title="Texture_chandlier4_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_chandlier4_LQ.gif" width="384" height="384" title="Texture_chandlier4_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_chateau_c11_HQ.png" width="384" height="192" title="Texture_chateau_c11_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_chateau_c11_LQ.gif" width="384" height="384" title="Texture_chateau_c11_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_fence_m01_HQ.png" width="384" height="384" title="Texture_fence_m01_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_fence_m01_LQ.gif" width="384" height="384" title="Texture_fence_m01_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_m_dam_HQ.png" width="384" height="384" title="Texture_m_dam_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_m_dam_LQ.gif" width="384" height="384" title="Texture_m_dam_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_machine_c01b_HQ.jpg" width="384" height="384" title="Texture_machine_c01b_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_machine_c01b_LQ.gif" width="384" height="384" title="Texture_machine_c01b_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_maps_HQ.png" width="384" height="192" title="Texture_maps_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_maps_LQ.gif" width="384" height="384" title="Texture_maps_LQ">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_tree_vil2t_HQ.png" width="384" height="384" title="Texture_tree_vil2t_HQ"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Comparison/Texture_tree_vil2t_LQ.gif" width="384" height="384" title="Texture_tree_vil2t_LQ">
+Some single textures to compare. Left: the 4x scaled Texture, Right: a GIF animation before/after scaling. I think you'll see the difference and why ESRGAN is so superior compared to other scaling algorithms. Click the left image to see the texture in the scaled resolution.
 
-<a name="examplesrtcw"></a>
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_atruss_m06a_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_atruss_m06a_LQ.gif" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_chandlier4_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_chandlier4_LQ.gif" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_chateau_c11_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_chateau_c11_LQ.gif" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_fence_m01_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_fence_m01_LQ.gif" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_m_dam_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_m_dam_LQ.gif" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_machine_c01b_HQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_machine_c01b_LQ.gif" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_maps_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_maps_LQ.gif" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_tree_vil2t_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_tree_vil2t_LQ.gif" width="384">
+
+
+<a name="examples"></a>
+
 ### Examples RTCW
-Some Ultra Widescreen Screenshots (3840x1600) with the converted textures using this method, default settings.
+Some Ultra Widescreen ingame Screenshots (3840x1600) from different SP maps with the converted textures using this tool, default settings. I've only added some of my own custom blood textures.
 
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Action.jpg" width="384" height="160" title="RTCW Action"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Alpha1.jpg" width="384" height="160" title="RTCW Alpha1"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Alpha2.jpg" width="384" height="160" title="RTCW Alpha2"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Castle1.jpg" width="384" height="160" title="RTCW Castle1"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Castle2.jpg" width="384" height="160" title="RTCW Castle2"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Castle3.jpg" width="384" height="160" title="RTCW Castle3"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Civilian.jpg" width="384" height="160" title="RTCW Civilian"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Corpse.jpg" width="384" height="160" title="RTCW Corpse"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Dungeon.jpg" width="384" height="160" title="RTCW Dungeon"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Kessler.jpg" width="384" height="160" title="RTCW Kessler"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Lightning.jpg" width="384" height="160" title="RTCW Lightning"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Madscientist.jpg" width="384" height="160" title="RTCW Madscientist"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Mess.jpg" width="384" height="160" title="RTCW Mess"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/Staircase.jpg" width="384" height="160" title="RTCW Staircase">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Start.jpg" width="768">
 
-<a name="exampleset"></a>
-### Examples Enemy Territory
-Some Ultra Widescreen Screenshots (3840x1600) with the converted textures using this method, default settings.
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Action.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Armor.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_BJ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Bunker.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Candles.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Castle.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Castlecorridor.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Civilian.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Guard.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Kessler.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Lightning1.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Lightning2.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Medicpanel.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Mess.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Panel.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Pub.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Sign1.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Sign2.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Stair.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Stonepanel.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Sub.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Underground.jpg" width="384">
+<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Village.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Window.jpg" width="384">
 
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Akimbo.jpg" width="384" height="160" title="ET Akimbo"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Allied.jpg" width="384" height="160" title="ET Allied"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Axis.jpg" width="384" height="160" title="ET Axis"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Bunker1.jpg" width="384" height="160" title="ET Bunker1"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Bunker2.jpg" width="384" height="160" title="ET Bunker2"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Commandpost.jpg" width="384" height="160" title="ET Commandpost"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Fueldump1.jpg" width="384" height="160" title="ET Fueldump1"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Fueldump2.jpg" width="384" height="160" title="ET Fueldump2"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Garage.jpg" width="384" height="160" title="ET Garage"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Gate.jpg" width="384" height="160" title="ET Gate"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Office.jpg" width="384" height="160" title="ET Office"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/Sniper.jpg" width="384" height="160" title="ET Sniper">
 
 <a name="python"></a>
+
 # Python Setup
 First you must install Python and add some libs to it before you can run the scripts. I've tested it and it works this way:
 
@@ -124,7 +173,9 @@ I've used the following packages/commands for developing/testing RTCWHQ:
 6. pip3 install torchvision-0.2.2.post3-py2.py3-none-any.whl
 7. pip3 install opencv_python-4.1.0.25-cp37-cp37m-win_amd64.whl
 
+
 <a name="workflow"></a>
+
 # Batch Workflow
 This is a long description of the single steps the batch command calls and executes. Like I already said, it is very complex but good to know what is happening here.
 
@@ -161,10 +212,13 @@ This is a long description of the single steps the batch command calls and execu
 
 You can then take these PK3 files and copy them at the folder where the original PK3 is located. RTCW and ET will recognize that the first part of the filename belongs to the original PK3, checks which files are newer and uses the newer files instead. So basically they are a mixture of all files but our scaled images will be used instead of the old Lowres images resulting in a new game experience. Sometimes you must add "Z_" or "ZZZ_" to the filename as the alphabetical order is important which file is checked last, but this depends on the filename of the PK3 or if other PK3s are used, like a script patch.
 
+
 <a name="issues"></a>
+
 # Known issues
 
 <a name="generalissues"></a>
+
 ### General Issues
 - the "cartoonpainted_400000.pth" model is a factor 4x only upscaling model, consider this!
 - the "ReducedColorsAttempt.pth" model is a factor 4x only upscaling model, consider this!
@@ -180,12 +234,15 @@ You can then take these PK3 files and copy them at the folder where the original
 - rtcwhq tries to convert them but I haven't test all maps available out there so expect the unexpected (though the standard PK3s should convert without any issues)
 
 <a name="rtcwissues"></a>
+
 ### RTCW won't start with HQ textures
 - Update your RTCW to the [unoffical 1.42 patch](https://wolffiles.de/index.php?filebase&fid=4905) to get sp_pak4.pk3
 - use the great [IORTCW 1.51C](http://wolfenstein4ever.de/index.php/downloads/viewdownload/7/2495) to bypass the loading errors
 - adjust the wolfconfig.cfg in the c:\Users\[User]\Documents\RTCW\main\ folder:
 
+
 <a name="tweaking"></a>
+
 # Tweaking
 You can adjust the Alpha channels that they get more sharp edges. While most of the Alpha textures are scaled properly some need extra treatment. For example, a diffuse puddle texture looks better with more blurry edges while a fence needs a hard edge. So how do we get good scaled Alpha channels? Blur them!
 
@@ -207,6 +264,7 @@ You can set the blur, contrast and brightness values in my batch file. Take a lo
 |8|90|1-100 (integer)|JPEG save quality (1=worst, 100=best, 90=barely visible artifacts)|
 
 <a name="flags"></a>
+
 ### Flags
 In the **rtcwhq.py** there are some flags you can set to **True** (enabled) or **False** (disabled):
 |flag|default|description|
@@ -223,6 +281,7 @@ In the **rtcwhq.py** there are some flags you can set to **True** (enabled) or *
 |warnings|False|ignore (False) or show (True) warnings|
 
 <a name="variables"></a>
+
 ### Variables
 In the **rtcwhq.py** there are some default variables you can change if needed but only if you know what you're doing here:
 
@@ -241,22 +300,27 @@ In the **rtcwhq.py** there are some default variables you can change if needed b
 Valid scaling methods (PIL) are: **Image.NEAREST**, **Image.BILINEAR**, **Image.BICUBIC** or **Image.LANCZOS** only
 
 <a name="bestpractice"></a>
+
 ### Best practice
 The best practice is to copy all the PK3 you want to enlarge at once in the input folder and run the default settings. After the script has finished, there are PK3s with the new textures for each of the subfolders. Move them away from the input folder. Now check the images one by one - delete the images which are ok and keep all others. Overwrite them with the original image and start another run with different settings. Copy the new files over the ones in the new PK3s.
 
 <a name="blur"></a>
+
 ### Gaussian Blur (Alpha Channel)
 The Gaussian Blur filter softens the pixelated alpha edges. I found this trick playing with Photoshop and it works quite good in combination with a contrast change but I've been tired to do all the clicks in Photoshop so I decided to write a neat tool to do this for me. As a rule of thumb, the larger the original texture, the smaller the blur amount. Because RTCWHQ only blurs the largest possible image after resize there is not much to change here only if your maximum output resolution is for example 512 only.
 
 <a name="contrast"></a>
+
 ### Contrast and Brightness (Alpha Channel)
 To get the sharp edges back again we must play with the brightness and contrast of the Alpha channel. A good start is to increase the contrast by 200% (2.0), the more contrast the sharper the edge. Sometimes we must decrease the brightness too and increase the contrast - so we can "move" the edge a little bit. This works vice versa by increasing the brightness while maintaining the higher contrast. You should avoid to use a negative contrast as it makes no sense.
 
 <a name="sharpen"></a>
+
 ### Sharpen (Color Channels)
 The input image gets resized to a higher resolution until the set maximum limit has been reached and if set, a sharpen filter is applied to it before it gets resized to its final output resolution, which in most cases should be one power of two level below. The sharpening increases the image quality but may cause artifacts, so be careful with too high values here.
 
 <a name="autoexcludes"></a>
+
 ### Autoexcludes (RTCW/ET specific)
 This tool is written for RTCW/ET but can be used for other purposes, too. I've added some RTCW/ET specific checks, please consider this and switch the Flag **rtcwexcludes** in **rtcwhq.py** to **False** if it causes trouble:
 - files inside folders containing "fonts" in the folder name get a maximum texture size of 1024 (fonts)
@@ -265,8 +329,14 @@ This tool is written for RTCW/ET but can be used for other purposes, too. I've a
 - files inside folders containing "maps" in the folder name get a maximum texture size of 1024 (lightmaps)
 - files inside folders containing "skies", "sfx" or "liquids" in the folder name get NO contrast or brightness change (blurry alphas)
 
+
 <a name="changelog"></a>
+
 # Changelog
+
+- 05/14/2019 Minor update: small fixes
+  - fixed a small bug in the poweroftwo function
+  - replaced all Screenshots with better examples
 
 - 05/12/2019 Major update: many extensions to rtcwhq.py
   - added flags: autoconvert, skiptracemap, scalelightmaps, scalelarge, testmode, warnings
