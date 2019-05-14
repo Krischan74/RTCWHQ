@@ -1,8 +1,8 @@
 <img src="https://github.com/Krischan74/RTCWHQ/raw/master/RTCWHQ.jpg">
 
-No more blurry textures. Never again. This tool / script collection is for upscaling textures and graphics in the old games **Return to Castle Wolfenstein (RTCW)** and **Wolfenstein: Enemy Territory (ET)** using [ESRGAN]( https://github.com/xinntao/ESRGAN) - and possibly other games, too. It contains three useful Python scripts to for automated scaling a folder of images while preserving the Alphachannel of the 32bit TGA files. It runs from a single command file.
+No more blurry textures. Never again. This tool / script collection is for upscaling textures and graphics in the old games **Return to Castle Wolfenstein (RTCW)** and **Wolfenstein: Enemy Territory (ET)** using [ESRGAN]( https://github.com/xinntao/ESRGAN) - and possibly other games, too. It contains three useful Python scripts for automated scaling a folder of images while preserving the Alphachannel of the 32bit TGA files. It runs from a **single command file**.
 
-I've upscaled my whole RTCW/ET textures and it looks great now, it took about 1,5 hours to convert the ET pak0 textures here on a GTX2080 8GB (non-Ti). The results are **stunning** and I love to play and walk around looking at two complete new nearly 20 year old games to me :) Now you can rescale them on your own needs.
+I've upscaled my whole RTCW/ET textures and it looks great now, it took about 40 minutes to convert all of the RTCW and ET textures here on a GTX2080 8GB (non-Ti). The results are **stunning** and I love to play and walk around looking at two complete new nearly 20 year old games to me :) Now you can rescale them on your own needs.
 
 But you can use RTCWHQ to **upscale any kind of Images, Icons, Textures, Pixelart** or whatever. There are many pretrained models out there and you can even train your own models to achieve even better results - but this is rocket science to me. I've been happy with the model provided in the repository as the results are already sufficient to me.
 
