@@ -1,10 +1,13 @@
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/RTCWHQ.jpg">
+<img src="https://i.imgur.com/mRyCGM0.jpg">
 
 No more blurry textures. Never again. This tool / script collection is for upscaling textures and graphics in the old games **Return to Castle Wolfenstein (RTCW)** and **Wolfenstein: Enemy Territory (ET)** using [ESRGAN]( https://github.com/xinntao/ESRGAN) - and possibly other games, too. It contains three useful Python scripts for automated scaling a folder of images while preserving the Alphachannel of the 32bit TGA files. It runs from a **single command file**.
 
 I've upscaled my whole RTCW/ET textures and it looks great now, it took about 40 minutes to convert all of the RTCW and ET textures here on a GTX2080 8GB (non-Ti). The results are **stunning** and I love to play and walk around looking at two complete new nearly 20 year old games to me :) Now you can rescale them on your own needs.
 
 But you can use RTCWHQ to **upscale any kind of Images, Icons, Textures, Pixelart** or whatever. There are many pretrained models out there and you can even train your own models to achieve even better results - but this is rocket science to me. I've been happy with the model provided in the repository as the results are already sufficient to me.
+
+If you're in hurry you can download the whole project files and my zipped Python installation here:
+<a href="http://www.mediafire.com/file/il3h07mmpana2bb/Python37.zip/file">Python37.zip</a> (910MB) <a href="http://www.mediafire.com/file/368mwaimrej2ae7/RTCWHQ.zip/file">RTCWHQ.zip</a> (241MB)
 
 # Table of contents
 
@@ -70,19 +73,19 @@ Some Screenshots and Textures from both games for direct comparison. See the dif
 ### Wolfenstein: Enemy Territory Comparison
 Screenshots from the Battery Map. Left: original (LQ) and Right: 4x scaled (HQ). The difference may be small but sometimes it really looks stunning, not so blurry and more sharpened. Try it yourself, it is hard to see the effect in a single Screenshot.
 
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Alpha_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Alpha_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Bunker_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Bunker_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Commandpost_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Commandpost_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Corridor_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Corridor_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Electronics_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Electronics_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Gun_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Gun_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Gunroom_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Gunroom_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Machine_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Machine_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Radar_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Radar_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Restroom_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Restroom_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Sea_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Sea_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Sign_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Sign_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Wires_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/ET/ET_Battery_Wires_HQ.jpg" width="384">
+<img src="https://i.imgur.com/N3n75lc.jpg" width="384"> <img src="https://i.imgur.com/wxQzrni.jpg" width="384">
+<img src="https://i.imgur.com/3PDkpjn.jpg" width="384"> <img src="https://i.imgur.com/hJsxMcz.jpg" width="384">
+<img src="https://i.imgur.com/EW7H09t.jpg" width="384"> <img src="https://i.imgur.com/f8fhKL9.jpg" width="384">
+<img src="https://i.imgur.com/rCgm208.jpg" width="384"> <img src="https://i.imgur.com/MaLReZk.jpg" width="384">
+<img src="https://i.imgur.com/s7EdnM9.jpg" width="384"> <img src="https://i.imgur.com/pR9eHrB.jpg" width="384">
+<img src="https://i.imgur.com/4AT7aDY.jpg" width="384"> <img src="https://i.imgur.com/CzrSDxr.jpg" width="384">
+<img src="https://i.imgur.com/gAaLR15.jpg" width="384"> <img src="https://i.imgur.com/Po6tK55.jpg" width="384">
+<img src="https://i.imgur.com/EtrYlXX.jpg" width="384"> <img src="https://i.imgur.com/MzWfRsS.jpg" width="384">
+<img src="https://i.imgur.com/wpE1OiY.jpg" width="384"> <img src="https://i.imgur.com/LTDyNxk.jpg" width="384">
+<img src="https://i.imgur.com/YitiADm.jpg" width="384"> <img src="https://i.imgur.com/NZXlNFo.jpg" width="384">
+<img src="https://i.imgur.com/DH1x5RL.jpg" width="384"> <img src="https://i.imgur.com/Flk8jZD.jpg" width="384">
+<img src="https://i.imgur.com/VsE11uU.jpg" width="384"> <img src="https://i.imgur.com/nmP2y8Q.jpg" width="384">
+<img src="https://i.imgur.com/vDqHRKa.jpg" width="384"> <img src="https://i.imgur.com/35mI3wd.jpg" width="384">
 
 
 <a name="rtcw"></a>
@@ -90,38 +93,36 @@ Screenshots from the Battery Map. Left: original (LQ) and Right: 4x scaled (HQ).
 ### Return to Castle Wolfenstein Comparison
 Screenshots from the Chateau SP Map. Left: original (LQ) and Right: 4x scaled (HQ). The difference may be small but sometimes it really looks stunning, not so blurry and more sharpened. Try it yourself, it is hard to see the effect in a single Screenshot.
 
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Alpha_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Alpha_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Briefing1_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Briefing1_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Briefing2_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Briefing2_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Cellar_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Cellar_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Corridor_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Corridor_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Hall_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Hall_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Library_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Library_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Marble_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Marble_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Menu_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Menu_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Mess1_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Mess1_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Mess2_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Mess2_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Office_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Office_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Ornament1_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Ornament1_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Ornament2_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Ornament2_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Stair_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Stair_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Wallpaper_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Wallpaper_HQ.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Woman_LQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/RTCW/RTCW_Chateau_Woman_HQ.jpg" width="384">
-
+<img src="https://i.imgur.com/3Un8r7l.jpg" width="384"> <img src="https://i.imgur.com/J2B9Urf.jpg" width="384">
+<img src="https://i.imgur.com/LIMAbAv.jpg" width="384"> <img src="https://i.imgur.com/nxYzsbQ.jpg" width="384">
+<img src="https://i.imgur.com/liCgt0D.jpg" width="384"> <img src="https://i.imgur.com/u1247bb.jpg" width="384">
+<img src="https://i.imgur.com/e6mkl2r.jpg" width="384"> <img src="https://i.imgur.com/xT7y2xp.jpg" width="384">
+<img src="https://i.imgur.com/PLTEhYB.jpg" width="384"> <img src="https://i.imgur.com/jxpgqkT.jpg" width="384">
+<img src="https://i.imgur.com/z7Yhc4m.jpg" width="384"> <img src="https://i.imgur.com/6pJapXH.jpg" width="384">
+<img src="https://i.imgur.com/pV8dxNj.jpg" width="384"> <img src="https://i.imgur.com/HAK9cOV.jpg" width="384">
+<img src="https://i.imgur.com/CR7fmsA.jpg" width="384"> <img src="https://i.imgur.com/FmdT8eN.jpg" width="384">
+<img src="https://i.imgur.com/6hhaDDx.jpg" width="384"> <img src="https://i.imgur.com/eGCqphK.jpg" width="384">
+<img src="https://i.imgur.com/m9w4f9P.jpg" width="384"> <img src="https://i.imgur.com/fp48tb3.jpg" width="384">
+<img src="https://i.imgur.com/pl6JxGH.jpg" width="384"> <img src="https://i.imgur.com/DFuUsgQ.jpg" width="384">
+<img src="https://i.imgur.com/jk5Q11y.jpg" width="384"> <img src="https://i.imgur.com/Ky6fcm4.jpg" width="384">
+<img src="https://i.imgur.com/i68J7zn.jpg" width="384"> <img src="https://i.imgur.com/bpsFZof.jpg" width="384">
+<img src="https://i.imgur.com/AxR7zFt.jpg" width="384"> <img src="https://i.imgur.com/djTyulJ.jpg" width="384">
+<img src="https://i.imgur.com/xEqWOuA.jpg" width="384"> <img src="https://i.imgur.com/QF0Ab8l.jpg" width="384">
+<img src="https://i.imgur.com/7THJFoc.jpg" width="384"> <img src="https://i.imgur.com/t9juRnI.jpg" width="384">
 
 <a name="textures"></a>
 
 ### Texture Comparison
 Some single textures to compare. Left: the 4x scaled Texture, Right: a GIF animation before/after scaling. I think you'll see the difference and why ESRGAN is so superior compared to other scaling algorithms. Click the left image to see the texture in the scaled resolution.
 
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_atruss_m06a_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_atruss_m06a_LQ.gif" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_chandlier4_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_chandlier4_LQ.gif" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_chateau_c11_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_chateau_c11_LQ.gif" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_fence_m01_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_fence_m01_LQ.gif" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_m_dam_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_m_dam_LQ.gif" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_machine_c01b_HQ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_machine_c01b_LQ.gif" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_maps_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_maps_LQ.gif" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_tree_vil2t_HQ.png" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Texture/Texture_tree_vil2t_LQ.gif" width="384">
+<img src="https://i.imgur.com/bAoXzAR.png" width="384"> <img src="https://i.imgur.com/D07NMll.gif" width="384">
+<img src="https://i.imgur.com/SoO8Xej.png" width="384"> <img src="https://i.imgur.com/SRLcB2U.gif" width="384">
+<img src="https://i.imgur.com/av4IG3H.png" width="384"> <img src="https://i.imgur.com/bGau5En.gif" width="384">
+<img src="https://i.imgur.com/Ke97kFV.png" width="384"> <img src="https://i.imgur.com/4LgLVmT.gif" width="384">
+<img src="https://i.imgur.com/mhpDjTd.png" width="384"> <img src="https://i.imgur.com/qqeBagZ.gif" width="384">
+<img src="https://i.imgur.com/CU3lg9C.jpg" width="384"> <img src="https://i.imgur.com/Mvkbe1k.gif" width="384">
+<img src="https://i.imgur.com/AlIi1mM.png" width="384"> <img src="https://i.imgur.com/FppUy8T.gif" width="384">
+<img src="https://i.imgur.com/C9SCYcj.png" width="384"> <img src="https://i.imgur.com/UJ6j8ei.gif" width="384">
 
 
 <a name="examples"></a>
@@ -129,20 +130,20 @@ Some single textures to compare. Left: the 4x scaled Texture, Right: a GIF anima
 ### Examples RTCW
 Some Ultra Widescreen ingame Screenshots (3840x1600) from different SP maps with the converted textures using this tool, default settings. I've only added some of my own custom blood textures.
 
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Start.jpg" width="768">
+<img src="https://i.imgur.com/wdx2bvL.jpg" width="768">
 
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Action.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Armor.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_BJ.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Bunker.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Candles.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Castle.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Castlecorridor.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Civilian.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Guard.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Kessler.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Lightning1.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Lightning2.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Medicpanel.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Mess.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Panel.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Pub.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Sign1.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Sign2.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Stair.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Stonepanel.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Sub.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Underground.jpg" width="384">
-<img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Village.jpg" width="384"> <img src="https://github.com/Krischan74/RTCWHQ/raw/master/screenshots/Ingame/RTCW_Window.jpg" width="384">
+<img src="https://i.imgur.com/ZHHqBGT.jpg" width="384"> <img src="https://i.imgur.com/FPLXGch.jpg" width="384">
+<img src="https://i.imgur.com/v4cXgJh.jpg" width="384"> <img src="https://i.imgur.com/H1iJPnM.jpg" width="384">
+<img src="https://i.imgur.com/xNppXw2.jpg" width="384"> <img src="https://i.imgur.com/C9i2pVM.jpg" width="384">
+<img src="https://i.imgur.com/V39j4C8.jpg" width="384"> <img src="https://i.imgur.com/XhjzdyY.jpg" width="384">
+<img src="https://i.imgur.com/rKNCwyy.jpg" width="384"> <img src="https://i.imgur.com/RfnXuRe.jpg" width="384">
+<img src="https://i.imgur.com/PpxJNBV.jpg" width="384"> <img src="https://i.imgur.com/M9ANL9e.jpg" width="384">
+<img src="https://i.imgur.com/8gjJHIu.jpg" width="384"> <img src="https://i.imgur.com/gNucRBZ.jpg" width="384">
+<img src="https://i.imgur.com/XOTmJqc.jpg" width="384"> <img src="https://i.imgur.com/iktOyzJ.jpg" width="384">
+<img src="https://i.imgur.com/coM5WHE.jpg" width="384"> <img src="https://i.imgur.com/fOZDXEH.jpg" width="384">
+<img src="https://i.imgur.com/qTlrqxc.jpg" width="384"> <img src="https://i.imgur.com/aKDtk0k.jpg" width="384">
+<img src="https://i.imgur.com/95aYxak.jpg" width="384"> <img src="https://i.imgur.com/ZKCLAr8.jpg" width="384">
+<img src="https://i.imgur.com/jgiI1gw.jpg" width="384"> <img src="https://i.imgur.com/xDtUQ3v.jpg" width="384">
 
 
 <a name="python"></a>
